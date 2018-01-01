@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: dateTime-service
+
+server:
+  port: 18001
+
+eureka:
+  instance:
+    hostname: localhost1
+  client:
+    serviceUrl:
+      defaultZone: http://localhost1:8001/eureka/,http://localhost2:8002/eureka/,http://localhost3:8003/eureka/
+
+management:
+  security:
+    enabled: false

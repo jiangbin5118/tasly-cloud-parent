@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: dateTime-consumer
+
+server:
+  port: 28001
+
+eureka:
+  instance:
+    hostname: localhost1
+  client:
+    serviceUrl:
+      defaultZone: http://localhost1:8001/eureka/,http://localhost2:8002/eureka/,http://localhost3:8003/eureka/
